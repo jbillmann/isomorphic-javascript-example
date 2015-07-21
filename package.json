@@ -1,0 +1,35 @@
+{
+  "name": "isomorphic-javascript",
+  "version": "1.0.0",
+  "description": "A simple, isomorphic JavaScript example using React and Node.js.",
+  "main": "./src/server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbillmann/isomorphic-javascript-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jbillmann/isomorphic-javascript-example/issues"
+  },
+  "keywords": [
+    "node",
+    "react",
+    "isomorphic",
+    "sample",
+    "example"
+  ],
+  "author": "Jeremiah Billmann",
+  "license": "MIT",
+  "homepage": "https://github.com/jbillmann/isomorphic-javascript-example",
+  "devDependencies": {
+    "browserify": "^9.0.8",
+    "gulp": "^3.8.11",
+    "gulp-react": "^3.0.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "express": "^4.12.3",
+    "jade": "^1.10.0",
+    "react": "^0.13.1",
+    "react-router": "^0.13.3"
+  }
+}
