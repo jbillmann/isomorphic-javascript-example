@@ -9,7 +9,8 @@ module.exports = React.createClass({
     render: function() {
         return (
             <div>
-                <h2>Contact Component - Rendered on the  { this.state.renderedOn } </h2>
+                <h2>Contact Component - Rendered on the { this.state.renderedOn } </h2>
+                <h3>Email: {this.props.data.contact}</h3>
             </div>
         );
     }

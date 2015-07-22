@@ -15,9 +15,15 @@ app.get('/js/app.js', function(req, res) {
 
 app.get('/*', function(req, res) {
     var router = Router.create({location: req.url, routes: routes});
+    res.locals.appState = {
+        name: 'Jeremiah Billmann',
+        contact: 'jbillmann@skylinetechnologies.com',
+        about: 'Software Engineer'
+    };
+
     router.run(function(Handler, state) {
-        var content = React.renderToString(React.createElement(Handler, null));
-        return res.render('index', { content: content });
+        var content = React.renderToString(React.createElement(Handler, {data: res.locals.appState}));
+        return res.render('index', { content: content, appState: res.locals.appState });
     });
 });
 

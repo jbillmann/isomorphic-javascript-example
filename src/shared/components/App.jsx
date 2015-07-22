@@ -27,9 +27,9 @@ module.exports = React.createClass({
                     </div>
                 </nav>
                 <div className="container" style={{paddingTop: '40px'}}>
-                    <h1 className="text-muted">Isomorphic JavaScript App</h1>
+                    <h1 className="text-muted">Isomorphic JavaScript App by {this.props.data.name}</h1>
                     <hr />
-                    <RouteHandler/>
+                    <RouteHandler {...this.props} />
                 </div>
             </div>
         );

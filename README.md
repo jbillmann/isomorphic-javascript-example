@@ -1,5 +1,5 @@
 # Isomorphic JavaScript using React
-A simple, isomorphic JavaScript example using React and Node.js.
+The most simplistic, isomorphic JavaScript example using React and Node.js.
 
 ## Install
 

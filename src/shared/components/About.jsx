@@ -8,7 +8,10 @@ module.exports = React.createClass({
     },
     render: function() {
         return (
-            <div><h2>About Component - Rendered on the { this.state.renderedOn } </h2></div>
+            <div>
+                <h2>About Component - Rendered on the { this.state.renderedOn } </h2>
+                <h3>Title: {this.props.data.about}</h3>
+            </div>
         );
     }
 });
