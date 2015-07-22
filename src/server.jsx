@@ -17,7 +17,7 @@ app.get('/*', function(req, res) {
     var router = Router.create({location: req.url, routes: routes});
     res.locals.appState = {
         name: 'Jeremiah Billmann',
-        contact: 'jbillmann@skylinetechnologies.com',
+        contact: 'myemail@mydomain.com',
         about: 'Software Engineer'
     };
 
