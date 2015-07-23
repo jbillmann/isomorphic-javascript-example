@@ -23,7 +23,7 @@ app.get('/*', function(req, res) {
 
     router.run(function(Handler, state) {
         var content = React.renderToString(React.createElement(Handler, {data: res.locals.appState}));
-        return res.render('index', { content: content, appState: res.locals.appState });
+        return res.render('index', {content: content, appState: res.locals.appState});
     });
 });
 
